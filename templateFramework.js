@@ -21,5 +21,8 @@ module.exports = {
     },
     sendTemplatedEmail: function(params) {
         return SES.sendTemplatedEmail(params).promise();
+    },
+    sendEmail: function(params) {
+        return SES.sendEmail(params).promise();
     }
-}
+} 
